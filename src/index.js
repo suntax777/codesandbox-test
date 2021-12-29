@@ -107,11 +107,36 @@ const nameArr = ["田中", "山田", "小林"];
 // });
 // console.log(newNumArr);
 
-const newNameArr = nameArr.map((name) => {
-  if (name === "小林") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(...newNameArr);
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "小林") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(...newNameArr);
+
+// const val1 = 1 < 0 ? "trueです" : "falseです";
+// console.log(val1);
+
+// const num = "1300";
+// // console.log(num.toLocaleString());
+
+// const formattedNum = typeof num === 'number' ? num.toLocaleString(): '数値を入力してください';
+// //数値を入力してください
+// console.log(formattedNum);
+
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? '100を超えています': '今日範囲内です';
+// }
+
+// console.log(checkSum(20, 87));
+// ||は左側がfalseなら右側を返す
+// const num = 100;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+
+//&&は左側がtrueなら右側を返す
+const num2 = null;
+const fee2 = num2 && "なにか設定されました";
+console.log(fee2);
